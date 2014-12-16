@@ -1,0 +1,6 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:key="open_secondary_activity"
+        android:title="Open Secondary Activity"
+        android:summary="simple push on this button opens a secondary activity"/>
+</PreferenceScreen>
