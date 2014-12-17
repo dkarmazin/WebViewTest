@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toolbar;
 
 import com.example.dkarmazin.webviewtest.fragment.FragmentNewsPager;
 import com.example.dkarmazin.webviewtest.R;
@@ -14,6 +15,9 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setActionBar(toolbar);
 
         FragmentNewsPager fragmentNewsPager = FragmentNewsPager.newInstance();
         getFragmentManager().beginTransaction().replace(R.id.newsListContainer, fragmentNewsPager).commit();
